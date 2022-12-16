@@ -18,11 +18,7 @@ body{
 
 }
 .nav{
-	background-image: url(img/Bg_image/bgh2h2.jpg);
-    background-size: 100% auto;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-	box-shadow: 1px 1px 4px 1px rgb(0 0 0/ 20%);
+	background: #1a3150;
 	width: 100%;
 	height: 55px;
 	display: flex;
@@ -111,14 +107,13 @@ li a{
 	padding: 0 10px;
 }
 .favourites{
-	background-image: linear-gradient(to left,#6f8caa, #fff);
+	background: #ffda44;
 	border-radius: 10px;
 	margin-left: 10px;
 	display: flex;
 }
 .favourites a{
 	padding: 0 10px;
-	
 	text-decoration: none;
 	font-weight: 600;
 	color: #1a3150;
@@ -189,10 +184,7 @@ i.bi-gear-fill{
     margin: 0 auto;
 }
 .header-wrapper{
-	background-image: url(img/Bg_image/bgh2h2.jpg);
-    background-size: 100% auto;
-    background-position: 0 0;
-    background-repeat: no-repeat;
+	background-color: #1a3150;
     height: 55px;
 }
 .adswrapper{
@@ -236,7 +228,7 @@ i.bi-gear-fill{
 }
 .topleagues a:hover, .rankings a:hover, .all-leagues a:hover{
 	background: #e1e7ed;
-	border-radius: 20px;
+	border-radius: 0px;
 }
 .topleagues a img, .rankings a img, .all-leagues a img{
 	width: 20px;
@@ -386,7 +378,6 @@ i.bi-gear-fill{
 .standing-bar table{
 	text-align: left;
 	font-size: 13px;
-	font-style: italic;
 	border-collapse: collapse;
   	width: 100%;
 	border-top: 1px solid #E4E5E7;
@@ -559,7 +550,7 @@ td img{
 	align-items: center;
 }
 .title-L{
-	background: #e9e9e9;
+	background: #e1e7ed;
 	box-shadow: 0 1px 4px -2px #000;
 	margin: 5px 0;
 	width:100%;
@@ -740,7 +731,7 @@ a .title-seperate__statistic:hover{
 	opacity: 0.7;
 }
 .title-seperate__pred-active{
-	background: #ffda44;
+	background: #fff;
 	width: 50%;
 	height: 40px;
 	padding: 5px 15px;
@@ -754,7 +745,6 @@ a .title-seperate__statistic:hover{
 	font-family: 'Montserrat', sans-serif;
 }
 .title-seperate__pred{
-	background: #fff;
 	width: 50%;
 	height: 40px;
 	padding: 5px 15px;
@@ -768,7 +758,6 @@ a .title-seperate__statistic:hover{
 	font-family: 'Montserrat', sans-serif;
 }
 .title-seperate__statistic{
-	background: #fff;
 	width: 50%;
 	height: 40px;
 	padding: 5px 15px;
@@ -782,7 +771,7 @@ a .title-seperate__statistic:hover{
 	font-family: 'Montserrat', sans-serif;
 }
 .title-seperate__statistic-active{
-	background: #ffda44;
+	background: #fff;
 	width: 50%;
 	height: 40px;
 	padding: 5px 15px;
@@ -3467,17 +3456,14 @@ td .scorers__stats{
 /*FB-Live-score*/
 
 .fb-live-score{
-	background-image: url(img/Bg_image/bgh2h2.jpg);
-    background-size: 100% auto;
-    background-position: 0 0;
-    background-repeat: no-repeat;
+	background-color: #1a3150;
 	display: flex;
 	justify-content: space-between;
 	position: relative;
  }
  .fb-live-score-title{
 	color: #fff;
-	padding: 15px 30px;
+	padding: 5px 30px;
 	font-family: Montserrat,"Montserrat",sans-serif;
 	font-weight: 700;
 	font-style: italic;
@@ -4252,18 +4238,18 @@ td .scorers__stats{
 	 border-bottom: 1px solid rgba(34, 34, 38, 0.15);
  }
  .fb-rankings-page-2-selector:active{
-	background-color:rgba(29, 124, 216, 0.15);
+	background-color: #e1e7ed;
  }
  .fb-rankings-page-2-selector.active{
 	 cursor: pointer;
 	 border-radius: 8px;
-	 border: 1px solid rgba(29, 124, 216, 0.15);
+	 border: 1px solid #6f8caa;
 	 padding: 8px;
 	 font: 700 14px "Roboto", sans-serif;
 	 text-transform: uppercase;
 	 transition: background-color 200ms ease 0s, border-color 200ms ease 0s, color 200ms ease 0s;
-	 background-color: rgba(29, 124, 216, 0.15);
-	 color: rgb(29, 124, 216);
+	 background-color: #e1e7ed;
+	 color: #1a3150;
 	 display: inline-block;
  }
  .fb-rankings-page-2-selector{
@@ -4320,20 +4306,13 @@ td .scorers__stats{
  }
  .injury-page__team-wrapper{
 	padding: 5px 30px;
-	background-image: url(img/Bg_image/qatar-worldcup-bg.jpg);
-    background-size: 100% auto;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-	color: #fff;
-	font-weight: 700;
+	background-color: #e1e7ed;
+	color: #6f8caa;
+	font-weight: 600;
 	font-size: 14px;
-	font-style: italic;
 	position: sticky;
     top: 0;
     left: 0;
- }
- .injury-page__team-title-content{
-	font-family: Montserrat,"Montserrat",sans-serif;
  }
  .inj-container {
 	 display: grid;
@@ -4452,7 +4431,6 @@ td .scorers__stats{
 	 font-weight: 600;
 	 color: #1a3150;
 	 transition: color .2s;
-	 font-style: italic;
  }
  
  .news_big .news__articles_big .news__article_big .article__content_big .article__excerpt_big {
@@ -4691,4 +4669,131 @@ td .scorers__stats{
 	 background-color: #e1e7ed;
  }
  
- 
+ .Hbif {
+    padding: 4px 30px;
+    background: #fff;
+}
+
+.RMfcC {
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #6f8caa;
+    padding: 5px;
+    font: 700 14px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    transition: background-color 200ms ease 0s, border-color 200ms ease 0s, color 200ms ease 0s;
+    background-color: #e1e7ed;
+    color: #1a3150
+}
+
+.bJbFuC {
+    display: inline-block;
+}
+
+.sc-pyfCe + .sc-pyfCe {
+    margin-left: 16px;
+}
+
+.fEHohf {
+    display: flex;
+}
+
+.gjJmZQ {
+    display: flex;
+}
+
+.jkRmRX {
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgba(229, 233, 239, 0.4);
+    color: rgb(34, 34, 38);
+    border: 1px solid rgba(229, 233, 239, 0.4);
+    padding: 5px;
+    font: 700 14px "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    transition: background-color 200ms ease 0s, border-color 200ms ease 0s, color 200ms ease 0s;
+}
+
+.RMfcC:active {
+    background-color: #e1e7ed;
+}
+
+.jkRmRX:active {
+    background-color: #e1e7ed;
+}
+
+.ml-pagination {
+    text-align: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.bg-grey-5 {
+    background-color: #f5f7f9!important;
+}
+
+.ml-pagination__btn {
+    background-color: #1a3150;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: color .3s ease-in-out;
+}
+
+.ml-pagination__btn--prev:after {
+    border-width: 40px 10px 0 0;
+    border-color: #1a3150 transparent transparent;
+    right: -10px;
+}
+
+.ml-pagination__btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border-style: solid;
+}
+
+.headline, .title-3 {
+    text-transform: uppercase;
+}
+
+.title-3 {
+    font: 500 14px/1.36 Roboto,"Roboto",sans-serif;
+}
+
+.bg-light {
+    background-color: #fff!important;
+    color: #1a3150;
+}
+
+.subhead {
+    font: 500 11px/1 Roboto,"Roboto",sans-serif;
+}
+
+.color-grey-2 {
+    color: #6f8caa!important;
+}
+
+.ml-pagination__btn--next:after {
+    border-width: 0 0 40px 10px;
+    border-color: transparent transparent #1a3150;
+    left: -10px;
+}
+
+.ml-pagination__btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border-style: solid;
+}
+
+.ml-pagination__btn:hover {
+    color: #00b1ff;
+}
