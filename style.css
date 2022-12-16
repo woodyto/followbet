@@ -3486,8 +3486,9 @@ td .scorers__stats{
 	
  }
  .fb-prediction-title:hover{
-	background: #1a3150;
-	color: #fff;
+	background-image: linear-gradient(#e1e7ed, #fff, #e1e7ed);
+    color: #1a3150;
+	transition: 0.1s;
  }
  .fb-prediction-title span{
 	margin-right: 5px;
