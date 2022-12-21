@@ -47,7 +47,7 @@
                                         <span></span>
                                     </button>
                                     <!--body need to add class="no-scroll"-->
-                                    <div class="nav-mobile-layout"> 
+                                    
                                     <div class="nav-mobile"> <!--add "active" to the class to display left-bar-->
                                         <div class="nav-mobile__inner">
 
@@ -196,16 +196,17 @@
                                                 </div>
                                             </div>
                                             <!---->
-                                            <div class="nav-mobile__dropdowns__lang"> <!--add "active" to the class to display Language-dropdowns-->
-                                                <div class="nav-mobile__dropdown">
-                                                    <div class="nav-mobile__dropdown__head">
-                                                        <button class="nav-mobile__dropdown__close">
-                                                            <i class="bi bi-chevron-left"></i>
-                                                            Back
-                                                        </button>
-                                                        <span class="nav-mobile__dropdown__title">Language</span>
-                                                    </div>
-                                                    <div class="nav-mobile__dropdown__body">
+                                            <div class="nav-mobile__dropdowns">
+                                                <div class="nav-mobile__dropdowns__lang"> <!--add "active" to the class to display Language-dropdowns-->
+                                                    <div class="nav-mobile__dropdown">
+                                                        <div class="nav-mobile__dropdown__head">
+                                                            <button class="nav-mobile__dropdown__close">
+                                                                <i class="bi bi-chevron-left"></i>
+                                                                Back
+                                                            </button>
+                                                            <span class="nav-mobile__dropdown__title">Language</span>
+                                                        </div>
+                                                        <div class="nav-mobile__dropdown__body">
                                                         <ul class="nav-mobile__dropdown__items">
                                                             <li class="nav-mobile__dropdown__item">
                                                                 <a href="" class="nav-mobile__dropdown__link">
@@ -220,11 +221,11 @@
                                                                 </a>
                                                             </li>
                                                         </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <!---->
-                                            <div class="nav-mobile__dropdowns__time"> <!--add "active" to the class to display Timezone-dropdowns-->
+                                                <!---->
+                                                <div class="nav-mobile__dropdowns__time"> <!--add "active" to the class to display Timezone-dropdowns-->
                                                 <div class="nav-mobile__dropdown">
                                                     <div class="nav-mobile__dropdown__head">
                                                         <button class="nav-mobile__dropdown__close">
@@ -1923,12 +1924,13 @@
                                                         </button></li></ul>
                                                     </div>
                                                 </div>
+                                                </div>
+                                                <!---->
                                             </div>
-                                            <!---->
                                             <div class="nav-mobile__dropdowns-lvl-2"></div>
                                         </div>
                                     </div>
-                                    </div>  
+                                     
                                 </div>
                                 <a href="" class="logo">
                                     <img width="180" height="50" src="img/Brands_logo/New Logo FollowBet-1.svg" alt="followbet logo"> 
@@ -3011,7 +3013,51 @@
 
 
 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script>
+    $(document).ready(function(){
+      $('.nav-mobile__toggle').click(function(){
+        $(".nav-mobile__toggle").toggleClass("active");
+        $(".nav-mobile").toggleClass("active");
+        $(".nav-mobile-layout").toggleClass("active");
+        $(".nav-mobile__main").toggleClass("hide");
+        $("body").toggleClass("no-scroll");
+      });
+    });
 
+    $(document).ready(function(){
+      $('.nav-settings ul li:first').click(function(){
+        $(".nav-mobile").addClass("active");
+        $(".nav-mobile-layout").addClass("active");
+        $(".nav-mobile__main").addClass("hide");
+        $(".nav-mobile__dropdowns__lang").addClass("active");
+        $("body").addClass("no-scroll");
+      });
+    });
+
+    $(document).ready(function(){
+      $('.nav-settings ul li:nth-child(2)').click(function(){
+        $(".nav-mobile").addClass("active");
+        $(".nav-mobile-layout").addClass("active");
+        $(".nav-mobile__main").addClass("hide");
+        $(".nav-mobile__dropdowns__time").addClass("active");
+        $("body").addClass("no-scroll");
+      });
+    });
+
+    $(document).ready(function(){
+      $('.nav-mobile__dropdown__close').click(function(){
+        $(".nav-mobile").addClass("active");
+        $(".nav-mobile-layout").addClass("active");
+        $(".nav-mobile__dropdowns__lang").removeClass("active");
+        $(".nav-mobile__dropdowns__time").removeClass("active");
+        $(".nav-mobile__main").removeClass("hide");
+        $("body").addClass("no-scroll");
+      });
+    });
+
+    
+    </script>
 </body>
 
 </html>
