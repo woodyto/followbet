@@ -510,7 +510,6 @@ td img{
 	height: 30px;
 	display: flex;
 	color: #6F8CAA;
-	font-style: italic;
 }
 .footer2{
 	display: flex;
@@ -518,7 +517,6 @@ td img{
 }
 .footer2 p{
 	color: #6f8caa;
-	font-style: italic;
 	margin-right: 10px;
 }
 .footer2 div{
@@ -4338,13 +4336,13 @@ td .scorers__stats{
 	 align-items: center;
 	 justify-content: center;
  }
- .injury-plus:before {
+ /* .injury-plus:before {
 	 display: block;
 	 content: '+';
 	 font-weight: 700;
 	 font-size: 25px;
 	 color: #ff3e3e;
- }
+ } */
  .inj-row:nth-child(odd) {
 	 background: #f5f7f9;
  }
@@ -4357,20 +4355,20 @@ td .scorers__stats{
  .inj-row{
 	padding: 0 30px;
  }
- .redcard:before {
+ /* .redcard:before {
 	 background-color: #ff3e3e;
- }
- .redcard:before, .yellowcard:before {
+ } */
+ /* .redcard:before, .yellowcard:before {
 	 display: block;
 	 content: '';
 	 width: 10px;
 	 height: 15px;
- }
- .injury-questionmark:before {
+ } */
+ /* .injury-questionmark:before {
 	 display: inline-block;
 	 content: '?';
 	 font-weight: 700;
- }
+ } */
  .injury-page__team-main-wrapper{
 	margin-bottom: 20px;
  }
