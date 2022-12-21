@@ -2130,3 +2130,127 @@ input {
     height: 16px;
     color: #b6c5d4;
 }
+
+.injury-page-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 20%);
+}
+
+.h2h-info-bar__title-wrapper, .lastmatch-info-bar__title-wrapper, .statistic-info-big-title-content {
+    height: 30px;
+    background: linear-gradient(90deg,#f5f7f9,#fff 50%,#f5f7f9);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-family: "Montserrat",sans-serif;
+}
+
+.h2h-info-bar__content-title, .lastmatch-info-bar__content-title {
+    line-height: 20px;
+}
+
+.h2h-info-bar__content-title-big, .lastmatch-info-bar__content-title-big {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Montserrat",sans-serif;
+}
+
+.injury-page__title-wrapper {
+    background: #162b46;
+    color: #fff;
+    font-style: italic;
+    padding: 8px 10px;
+    position: sticky;
+    top: 55px;
+    left: 0px;
+    z-index: 40;
+}
+
+.injury-page__title-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.injury-page__title-content-league-name {
+    font-weight: 600;
+    font-family: Montserrat,"Montserrat",sans-serif;
+}
+
+.injury-page__title-content-league-filter {
+    background: #f5f7f9;
+    padding: 5px 10px 5px 10px;
+    color: #6f8caa;
+    font-size: 12px;
+    font-style: normal;
+    border-radius: 8px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a.lbx img, p.lang1, i.bi-chevron-down {
+    width: 18px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.injury-page__team-main-wrapper {
+    margin-bottom: 10px;
+}
+
+.injury-page__team-wrapper {
+    padding: 5px 10px;
+    background-color: #e1e7ed;
+    color: #6f8caa;
+    font-weight: 600;
+    font-size: 12px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.inj-titles {
+    border-bottom: 2px solid #ffda44;
+    background: none;
+    font-weight: 700;
+    padding: 0 10px;
+    background: #fff;
+}
+
+.inj-container {
+    display: grid;
+    grid-template-columns: 10% 30% 10% 10% 10% 10% 20%;
+    grid-column-gap: 0;
+    grid-template-rows: 35px;
+    align-items: center;
+    transition: all 0.5s;
+    font-size: 14px;
+}
+
+.inj-container span {
+    padding: 0;
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 11px;
+}
+
+.inj-row:nth-child(odd) {
+    background: #f5f7f9;
+}
+
+.inj-row {
+    padding: 5px 10px;
+}
+
+.injury-page__team-title-content{
+    font-family: 'Montserrat';
+    font-style: italic;
+}
