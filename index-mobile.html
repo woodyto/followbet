@@ -1939,7 +1939,7 @@
                                     <div class="header-utility-nav__inner">
                                         <div class="search header-utility-nav__action">
                                             <button class="search__toggle">
-                                                <i class="bi bi-search"></i>
+                                                <i class="icon-action bi bi-search"></i>
                                             </button>
                                         </div>
                                         <div class="header-utility-nav__action">
@@ -2078,6 +2078,42 @@
                                             </figure> 
                                             <span class="t-ellipsis">
                                                 V.League
+                                            </span>
+                                        </a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                            <div class="league-list__label caption"> Quick Links </div>
+                                <ul>
+                                    <li><!----> 
+                                        <a href="" class="league-list__link" title="Yesterday">
+                                            <figure class="logo-league league-list__link__img bg-football">
+                                                <img alt="Yesterday" width="20" height="20" src="img/Site_icons/yesterday.png">
+                                            </figure> 
+                                            <span class="t-ellipsis">
+                                               Yesterday Predictions
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li><!----> 
+                                        <a href="" class="league-list__link" title="Today">
+                                            <figure class="logo-league league-list__link__img bg-football">
+                                                <img alt="Today" width="20" height="20" src="img/Site_icons/today.png">
+                                            </figure> 
+                                            <span class="t-ellipsis">
+                                                Today Predictions
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li><!----> 
+                                        <a href="" class="league-list__link" title="Tomorrow">
+                                            <figure class="logo-league league-list__link__img bg-football">
+                                                <img alt="Tomorrow" width="20" height="20" src="img/Site_icons/tomorrow.png">
+                                            </figure> 
+                                            <span class="t-ellipsis">
+                                                Tomorrow Predictions
                                             </span>
                                         </a>
                                     </li>
@@ -2395,11 +2431,15 @@
                                         <button class="btn-filter">
                                             <i class="btn-filter__icon icon-time bi bi-clock"></i> Full-Time
                                         </button>
-                                        <button class="btn-filter">
-                                            <i class="btn-filter__icon icon-time bi bi-clock"></i> Schedule
-                                        </button>
                                     </div>
+                                    <!-- <button class="btn-filter ml-auto compcolor">
+                                        <img width="14" height="14" src="img/Site_icons/trophy.png" alt="Competition">
+                                        <span>Competitions</span>
+                                        <i class="icon-dropdown fa-sharp fa-solid fa-sort"></i>
+                                    </button> -->
                                 </div>
+                                <!--search-competitions-->
+                                
                                 <!--content-->
                                 <div class="ml__wrap">
                                     <div class="fb-live-score">
@@ -3028,8 +3068,9 @@
     $(document).ready(function(){
       $('.nav-settings ul li:first').click(function(){
         $(".nav-mobile").addClass("active");
+        $(".nav-mobile__inner").addClass("active-submenu");
         $(".nav-mobile-layout").addClass("active");
-        $(".nav-mobile__main").addClass("hide");
+        $(".nav-mobile__main").removeClass("hide");
         $(".nav-mobile__dropdowns__lang").addClass("active");
         $("body").addClass("no-scroll");
       });
@@ -3038,8 +3079,9 @@
     $(document).ready(function(){
       $('.nav-settings ul li:nth-child(2)').click(function(){
         $(".nav-mobile").addClass("active");
+        $(".nav-mobile__inner").addClass("active-submenu");
         $(".nav-mobile-layout").addClass("active");
-        $(".nav-mobile__main").addClass("hide");
+        $(".nav-mobile__main").removeClass("hide");
         $(".nav-mobile__dropdowns__time").addClass("active");
         $("body").addClass("no-scroll");
       });
@@ -3048,6 +3090,7 @@
     $(document).ready(function(){
       $('.nav-mobile__dropdown__close').click(function(){
         $(".nav-mobile").addClass("active");
+        $(".nav-mobile__inner").removeClass("active-submenu");
         $(".nav-mobile-layout").addClass("active");
         $(".nav-mobile__dropdowns__lang").removeClass("active");
         $(".nav-mobile__dropdowns__time").removeClass("active");
@@ -3055,6 +3098,27 @@
         $("body").addClass("no-scroll");
       });
     });
+
+    $(document).ready(function(){
+      $('.search__toggle').click(function(){
+        $(".search.header-utility-nav__action").toggleClass("active");
+        $(".menu.header-search").toggleClass("active");
+        $(".icon-action").toggleClass("bi-search");
+        $(".icon-action").toggleClass("bi-x-lg");
+        $("body").toggleClass("no-scroll");
+      });
+    });
+
+    $(document).ready(function(){
+      $('.btn-filter.ml-auto').click(function(){
+        $(".btn-filter.ml-auto").toggleClass("active");
+        $(".match-list-competitions").toggleClass("active");
+        $(".icon-dropdown").toggleClass("bi-x-lg");
+        $(".ml__wrap").toggleClass("active");
+      });
+    });
+
+   
 
     
     </script>
